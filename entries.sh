@@ -41,9 +41,6 @@ do
 		echo 'Enter the item number to delete ='
 		read item_no
 		item_no=$(($item_no-1))
-		echo $item_no
-		echo $i
-		sleep 5
 		if [ $item_no -gt $i ]; then
 			echo 'Wrong position entered'
 			sleep 5
@@ -57,7 +54,6 @@ do
 					item_no=$(($item_no+1))	
 				done
 			fi
-			sleep 5
 			i=$(($i-1))
 		fi
 	elif [ $choice -eq 4 ]; then
